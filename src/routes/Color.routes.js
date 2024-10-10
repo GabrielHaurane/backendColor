@@ -4,6 +4,6 @@ import validacionColor from "../helpers/validacionesColor.js";
 
 const colorRouter = Router();
 colorRouter.route('/color').post([validacionColor],crearColor).get(listarColores)
-colorRouter.route('/color/:id').delete(borrarColor).put(editarColor)
+colorRouter.route('/color/:id').delete(borrarColor).put([validacionColor],editarColor)
 
 export default colorRouter
