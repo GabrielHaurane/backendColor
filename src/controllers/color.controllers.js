@@ -6,7 +6,17 @@ export const listarColores = async (req,res) => {
     } catch (error) {
         console.error(error)
         res.status(404).json({
-            mensaje: "Ocurrio un error, no se encontraron las tareas"
+            mensaje: "Ocurrio un error, no se encontraron los colores"
+        })
+    }
+}
+export const obtenerColor = async (req,res) => {
+    try {
+        
+    } catch (error) {
+        console.error(error)
+        res.status(404).json({
+            mensaje:"Ocurrio un error, no se pudo obtener el color"
         })
     }
 }
